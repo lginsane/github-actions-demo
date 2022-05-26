@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '**/*src/**'
+      - '**.js'
+      - public/**
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
